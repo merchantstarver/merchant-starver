@@ -1,0 +1,22 @@
+{
+  "name": "Merchant Starver",
+  "description": "Redirects fake news websites to an archived version of the webpage.",
+  "version": "1.21",
+  "manifest_version": 2,
+  "background": {"scripts":["background.js"]},
+  "browser_action": {
+  "default_icon": "ON.png",
+  "default_title": "icon"
+  },
+  "permissions": [
+    "webRequest",
+    "*://www.salon.com/*",
+    "*://www.buzzfeed.com/*",
+    "*://www.huffingtonpost.com/*",
+    "*://www.cnn.com/*",
+    "*://www.nytimes.com/*",
+    "*://www.politico.com/*",
+    "*://www.washingtonpost.com/*",
+    "webRequestBlocking"
+  ]
+}
